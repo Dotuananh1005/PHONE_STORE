@@ -1,0 +1,101 @@
+.banner {
+  overflow: hidden;
+  display: block;
+}
+
+.banner img {
+  transition: all 0.3 ease-in-out;
+  transition-duration: 1s;
+}
+
+.banner img:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 350px 900px;
+  grid-gap: 30px;
+}
+
+.category h2 {
+  padding: 10px;
+}
+
+.category h2 a:hover {
+  color: aqua;
+}
+
+.item2 {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.anh {
+  position: absolute;
+  bottom: -400px;
+  transition-duration: 1s;
+}
+
+.item2:hover .anh {
+  transform: translateY(-395px);
+  transition-duration: 1s;
+}
+
+ul li a:hover {
+  font-size: 22px;
+  transition-duration: 0.5s;
+}
+
+.slideshow-container {
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  display: block;
+}
+
+.mySlides {
+  display: none;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
